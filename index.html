@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TicketHub - Purchase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎤 Ticket Hub get your tickets!</h1>
+    <p>Fill out the form below to purchase your tickets.</p>
+
+    <form id="ticketForm">
+      <input type="hidden" name="concertId" value="1" />
+      <label>Name: <input type="text" name="name" required /></label>
+      <label>Email: <input type="email" name="email" required /></label>
+      <label>Phone: <input type="text" name="phone" /></label>
+      <label>Quantity: <input type="number" name="quantity" min="1" required /></label>
+      <label>Credit Card #: <input type="text" name="creditCard" required /></label>
+      <label>Expiration: <input type="text" name="expiration" placeholder="MM/YY" required /></label>
+      <label>Security Code: <input type="text" name="securityCode" required /></label>
+      <label>Address: <input type="text" name="address" required /></label>
+      <label>City: <input type="text" name="city" required /></label>
+      <label>Province: <input type="text" name="province" required /></label>
+      <label>Postal Code: <input type="text" name="postalCode" required /></label>
+      <label>Country: <input type="text" name="country" value="Canada" required /></label>
+
+      <button type="submit">Purchase Ticket</button>
+    </form>
+
+    <p id="responseMsg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
